@@ -33,12 +33,12 @@ class NavBar extends Component {
                     </button>
                     <a className="navbar-brand" href="#">Devan S.</a>
                 </div>
-                <div className={"navbar-collapse" + " "+ navClass} id="myNavbar">
+                <div className={"navbar-collapse " + navClass} id="myNavbar">
                     <ul className="nav navbar-nav">
                         <li className="active"><a href="#">Home</a></li>
-                        <li><a href="#">{this.state.collapsed.toString()}</a></li>
-                        <li><a href="#">Page 2</a></li>
-                        <li><a href="#">Page 3</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Contact Me</a></li>
                     </ul>
                 </div>
             </div>

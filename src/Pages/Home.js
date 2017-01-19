@@ -5,7 +5,11 @@ import React, { Component } from 'react';
 class Home extends Component {
     render() {
         return(
-            <h1>Hello World</h1>
+            <div>
+                <img className="profile-pic" src="" alt="Picture of Devan"></img>
+                <h3>About Me</h3>
+                <p></p>
+            </div>
         );
     }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 //import react-bootstrap
-import './App.css';
-import './theme-bootstrap.css';
+import './style/App.css';
+import './style/theme-bootstrap.css';
 
 import Home from './Pages/Home';
 import NavBar from './Components/NavBar'
