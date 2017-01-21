@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
-import './App.css';
-
 class Contact extends Component {
     render() {
-        return(
-            <h1>Hello World</h1>
+        return (
+            <div >
+                <h1>Contact Me</h1>
+                <div><p>devanslink@gmail.com</p>
+                    <a href="#">Me on Github</a>
+                </div>
+            </div >
         );
     }
 }
