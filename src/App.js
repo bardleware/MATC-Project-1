@@ -11,17 +11,18 @@ import Contact from './Pages/Contact';
 import NavBar from './Components/NavBar'
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <NavBar />
-        <Home />
-        <Projects />
-        <Resume />
-        <Contact />
-      </div>
-    );
-  }
+    
+    render() {
+        return (
+            <div className="App">
+                <NavBar />
+                <Home />
+                <Projects projects="this.state.projects"/>
+                <Resume />
+                <Contact />
+            </div>
+        );
+    }
 }
 
 export default App;
