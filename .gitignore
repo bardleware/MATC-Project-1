@@ -15,3 +15,5 @@ build
 .idea
 npm-debug.log
 
+# development stuff
+projects.js
