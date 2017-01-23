@@ -17,7 +17,7 @@ class App extends Component {
             <div className="App">
                 <NavBar />
                 <Home />
-                <Projects projects="this.state.projects"/>
+                <Projects />
                 <Resume />
                 <Contact />
             </div>
