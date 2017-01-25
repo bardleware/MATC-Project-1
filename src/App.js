@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-//import react-bootstrap
-import './style/App.css';
+
 import './style/theme-bootstrap.css';
 
 import Home from './Pages/Home';
