@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
+import VCard from '../Components/VCard';
+
 class Contact extends Component {
     render() {
         return (
             <div >
                 <h1>Contact Me</h1>
-                <div><p>devanslink@gmail.com</p>
-                    <a href="#">Me on Github</a>
-                </div>
+                <VCard />
             </div >
         );
     }

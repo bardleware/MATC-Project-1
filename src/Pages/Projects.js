@@ -26,7 +26,7 @@ class Projects extends Component {
 
         var projList = projects.map(function (obj, i) {
             return(
-                <div key="{i}" className="col-md-4 col-sm-6">
+                <div key={obj.id} className="col-md-4 col-sm-6">
                 <p>{obj.name}</p>
                 <img src={obj.thumb} className="img-responsive thumb" alt="placeHolder"></img>
                 <p>{obj.about}</p>
