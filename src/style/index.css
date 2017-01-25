@@ -3,3 +3,27 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.App {
+  text-align: center;
+  height: 120%;
+}
+p{
+  font-size: 14pt;
+}
+
+.thumb {
+  width:100%;
+}
+
+
+/* Contact form styling */
+.form{
+  margin-top: 50px;
+}
+form{
+  margin: 0 auto;
+  width: 400px;
+  border: 5px solid #4e5d6c;
+  padding: 10px;
+}

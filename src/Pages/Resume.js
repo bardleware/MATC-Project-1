@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import VCard from '../Components/VCard';
 
 class Resume extends Component {
     render() {
-        return(
-            <h1>My Resume</h1>
+        return (
+            <div>
+                <h1>My Resume</h1>
+                <VCard />
+            </div>
         );
     }
 }
