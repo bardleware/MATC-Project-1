@@ -27,3 +27,15 @@ form{
   border: 5px solid #4e5d6c;
   padding: 10px;
 }
+
+@media screen and (max-device-width:800px){
+  form{
+    width: 200;
+    border: none;
+    margin: 0;
+    padding-left: 5%;
+  }
+  div.form-group{
+    width: 86%;
+  }
+}

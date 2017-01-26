@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
+import { Router, Route, browserHistory } from 'react-router';
+
 import './style/theme-bootstrap.css';
+
 
 import Home from './Pages/Home';
 import Projects from './Pages/Projects';
@@ -10,16 +13,17 @@ import Contact from './Pages/Contact';
 import NavBar from './Components/NavBar'
 
 class App extends Component {
-    
+
     render() {
         return (
-            <div className="App">
-                <NavBar />
-                <Home />
-                <Projects />
-                <Resume />
-                <Contact />
-            </div>
+            <Router history={browserHistory}>
+                <Route component={NavBar}>
+                    <Route path="/" component={Home} />
+                    <Route path="projects" component={Projects} />
+                    <Route path="resume" component={Resume} />
+                    <Route path="contact" component={Contact} />
+                </Route>
+            </Router>
         );
     }
 }

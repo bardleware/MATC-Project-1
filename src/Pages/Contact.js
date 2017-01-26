@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import '../style/index.css';
+
 class Contact extends Component {
     constructor() {
         super();
