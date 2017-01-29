@@ -12,7 +12,7 @@ class Home extends Component {
             <div>
                 <div className="home-header">
                     <img className="profile-pic" src="http://devansprojects.net/img/profile-pic.jpg" alt="Picture of Devan"></img>
-                    <h3>Hello!</h3>
+                    <h3>Hello, my name is Devan.</h3>
                 </div>
                 <div className="aboutMe">
                     <p >I am a full stack web developer currently attending a Web developer course at MATC in Lehi, UT where I am fine tuning and learing more about web development.</p>

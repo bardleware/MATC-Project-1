@@ -5,7 +5,7 @@ import '../style/index.css';
 class Contact extends Component {
     constructor() {
         super();
-        this.state = { value: "Send me feedback, jokes, etc." }
+        this.state = { value: "Send me feedback, jokes, etc. (this is not a working form. It is still under construction.)" }
     }
     render() {
         return (

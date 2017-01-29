@@ -32,7 +32,9 @@ class NavBar extends Component {
                                 <span className="icon-bar"></span>
                                 <span className="icon-bar"></span>
                             </button>
-                            <a className="navbar-brand" href="#">Devan S.</a>
+                            <a className="navbar-brand" href="/" title="Home"><div className="d-shadow">
+                            <span className="lastinitial">S</span>
+                            </div></a>
                         </div>
                         <div className={"navbar-collapse " + navClass} id="myNavbar">
                             <ul className="nav navbar-nav">

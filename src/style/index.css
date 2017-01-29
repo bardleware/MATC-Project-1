@@ -16,6 +16,49 @@ p{
   width:100%;
 }
 
+/* Boostrapr overrides*/
+nav.navbar.navbar-inverse{
+  height: 50px;
+}
+
+.navbar-toggle{
+  margin-top: 6px;
+}
+
+.navbar-nav {
+  margin-top: 6px;
+}
+
+
+/* end Bootstrap overrides*/
+
+
+.d-shadow{
+  width: 30px;
+height: 30px;
+background-color: #2b3e50;
+border-top-right-radius: 50%;
+border-bottom-right-radius: 50%;
+display: flex;
+justify-content:  flex-start;
+align-items: flex-end;
+}
+
+.lastinitial{
+  font-weight: 500;
+  font-size: 105%;
+  padding-left: 2px;
+}
+
+
+/* Resume Styling */
+.resume {
+  margin: 5%;
+}
+
+#rTitle{
+  margin-bottom: 20px;
+}
 
 /* Contact form styling */
 .form{
