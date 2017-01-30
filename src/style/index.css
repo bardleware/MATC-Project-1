@@ -19,6 +19,7 @@ p{
 /* Boostrapr overrides*/
 nav.navbar.navbar-inverse{
   height: 50px;
+  z-index: 5;
 }
 
 .navbar-toggle{
