@@ -28,7 +28,9 @@ nav.navbar.navbar-inverse{
 .navbar-nav {
   margin-top: 6px;
 }
-
+#myNavbar {
+  background-color: #df691a;
+}
 
 /* end Bootstrap overrides*/
 
