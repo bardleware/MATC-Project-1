@@ -16,6 +16,32 @@ p{
   width:100%;
 }
 
+/* VCard styles*/
+.contactIco{
+  height: 50px;
+  width: 50px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5px;
+  color: #2b3e50;
+}
+
+.githubBack{
+  background-color: white;;
+  border-radius: 50%;
+}
+.contactlink {
+  margin: 0 auto;
+  font-size: 34pt;
+}
+
+.emailBack{
+  background-color: #df691a;
+  border-radius: 50%;
+}
+
+
 /* Boostrapr overrides*/
 nav.navbar.navbar-inverse{
   height: 50px;
@@ -38,13 +64,13 @@ nav.navbar.navbar-inverse{
 
 .d-shadow{
   width: 30px;
-height: 30px;
-background-color: #2b3e50;
-border-top-right-radius: 50%;
-border-bottom-right-radius: 50%;
-display: flex;
-justify-content:  flex-start;
-align-items: flex-end;
+  height: 30px;
+  background-color: #2b3e50;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  justify-content:  flex-start;
+  align-items: flex-end;
 }
 
 .lastinitial{
@@ -61,6 +87,14 @@ align-items: flex-end;
 
 #rTitle{
   margin-bottom: 20px;
+  width: 400px;
+}
+
+.resumeHeader{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* Contact form styling */

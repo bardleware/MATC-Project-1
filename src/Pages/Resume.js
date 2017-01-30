@@ -3,10 +3,17 @@ import VCard from '../Components/VCard';
 
 class Resume extends Component {
     render() {
+       /* const skills = [];
+        const employment = [];
+        const education =[];
+        */
         return (
             <div className="resume">
+            <div className="resumeHeader">
                 <h1 id="rTitle">Devan Sisson</h1>
-
+                <VCard />
+            </div>
+                
 
                 <div id="mission">
                     <h3>My Mission</h3>
@@ -22,7 +29,7 @@ class Resume extends Component {
                 <div id="education">
 
                 </div>
-                <VCard />
+                
             </div>
         );
     }
