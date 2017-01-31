@@ -17,6 +17,10 @@ p{
 }
 
 /* VCard styles*/
+.links{
+  display: flex;
+  justify-content: flex-end;
+}
 .contactIco{
   height: 50px;
   width: 50px;
@@ -38,6 +42,15 @@ p{
 
 .emailBack{
   background-color: #df691a;
+  border-radius: 50%;
+}
+
+.resumeLink{
+  margin: 0 auto;
+  font-size: 25pt;
+}
+.resumeBack{
+  background-color: #8b0000;
   border-radius: 50%;
 }
 
@@ -97,6 +110,22 @@ nav.navbar.navbar-inverse{
   flex-wrap: wrap;
 }
 
+.skillList{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+.skill{
+  background-color: #596a7b;
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+}
+.skill li{
+  list-style: none;
+}
 /* Contact form styling */
 .form{
   margin-top: 50px;
@@ -110,7 +139,7 @@ form{
 
 @media screen and (max-device-width:800px){
   form{
-    width: 200;
+    width: 95%;
     border: none;
     margin: 0;
     padding-left: 5%;

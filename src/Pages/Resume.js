@@ -16,17 +16,81 @@ class Resume extends Component {
                 
 
                 <div id="mission">
-                    <h3>My Mission</h3>
+                    <h2>My Mission</h2>
                     <hr />
-                    <p>Optimistic, detail oriented, creative problem solver seeking opportunities to obtain emploument that will enable hime to make a difference in the lives of th epoeple he serves, allow him to have adequately challenging employment while finishing his education to provide for his family.</p>
+                    <p>Optimistic, detail oriented, creative problem solver seeking opportunities to obtain employment that will enable him to make a difference in the lives of the people he serves, allow him to have adequately challenging employment while finishing his education and provide for his family.</p>
                 </div>
                 <div id="skills">
-
+                        <h2>Skills</h2>
+                        <hr/>
+                        <div>
+                            <h3>Free Code Camp</h3>
+                            <p>Full Stack Web Developer</p>
+                            <span><em>Finishing September 2017</em></span>
+                            <div className="skillList">
+                                <div className="skill">JavaScript:
+                                    <ul>
+                                        <li>nodeJS</li>
+                                        <li>ReactJS</li>
+                                        <li>JQuery</li>
+                                        <li>Basic JavaScript</li>
+                                    </ul>
+                                </div>
+                                <div className="skill">CSS:
+                                    <ul>
+                                        <li>Selectors</li>
+                                        <li>Theming</li>
+                                        <li>Bootstrap</li>
+                                        <li>Basic Media Queries</li>
+                                    </ul>
+                                </div>
+                                <div className="skill">HTML5:
+                                    <ul>
+                                        <li>div layout</li>
+                                        <li>DOM Manipulation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                 </div>
+
                 <div id="employment">
 
                 </div>
+
                 <div id="education">
+
+                    <h2>Education</h2>
+                    <hr/>
+                    <div>
+                        <h3>Free Code Camp</h3>
+                        <p>Full Stack Web Developer</p>
+                        <span><em>Finishing September 2017</em></span>
+                        <div className="skillList">
+                            <div className="skill">JavaScript:
+                                <ul>
+                                    <li>nodeJS</li>
+                                    <li>ReactJS</li>
+                                    <li>JQuery</li>
+                                    <li>Basic JavaScript</li>
+                                </ul>
+                            </div>
+                            <div className="skill">CSS:
+                                <ul>
+                                    <li>Selectors</li>
+                                    <li>Theming</li>
+                                    <li>Bootstrap</li>
+                                    <li>Basic Media Queries</li>
+                                </ul>
+                            </div>
+                            <div className="skill">HTML5:
+                            <ul>
+                                <li>div layout</li>
+                                <li>DOM Manipulation</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 
