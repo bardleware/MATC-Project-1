@@ -1,10 +1,20 @@
-import React, { Component } from 'react';
+/* eslint-disable */import React, { Component } from 'react';
 import VCard from '../Components/VCard';
 
 class Resume extends Component {
     render() {
-       /* const skills = [];
-        const employment = [];
+       const skills = [
+                   {
+                       "Label": "JavaScript",
+                       "value": 210
+                   },
+                   {
+                       "label": "HTML5",
+                       "value": 184
+                   }
+
+       ];
+        /*const employment = [];
         const education =[];
         */
         return (
@@ -23,35 +33,7 @@ class Resume extends Component {
                 <div id="skills">
                         <h2>Skills</h2>
                         <hr/>
-                        <div>
-                            <h3>Free Code Camp</h3>
-                            <p>Full Stack Web Developer</p>
-                            <span><em>Finishing September 2017</em></span>
-                            <div className="skillList">
-                                <div className="skill">JavaScript:
-                                    <ul>
-                                        <li>nodeJS</li>
-                                        <li>ReactJS</li>
-                                        <li>JQuery</li>
-                                        <li>Basic JavaScript</li>
-                                    </ul>
-                                </div>
-                                <div className="skill">CSS:
-                                    <ul>
-                                        <li>Selectors</li>
-                                        <li>Theming</li>
-                                        <li>Bootstrap</li>
-                                        <li>Basic Media Queries</li>
-                                    </ul>
-                                </div>
-                                <div className="skill">HTML5:
-                                    <ul>
-                                        <li>div layout</li>
-                                        <li>DOM Manipulation</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+
                 </div>
 
                 <div id="employment">

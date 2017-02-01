@@ -48,9 +48,10 @@ p{
 .resumeLink{
   margin: 0 auto;
   font-size: 25pt;
+  color: white;
 }
 .resumeBack{
-  background-color: #8b0000;
+  background-color: #b30000;
   border-radius: 50%;
 }
 
@@ -74,7 +75,6 @@ nav.navbar.navbar-inverse{
 
 /* end Bootstrap overrides*/
 
-
 .d-shadow{
   width: 30px;
   height: 30px;
@@ -91,7 +91,6 @@ nav.navbar.navbar-inverse{
   font-size: 105%;
   padding-left: 2px;
 }
-
 
 /* Resume Styling */
 .resume {
@@ -118,7 +117,8 @@ nav.navbar.navbar-inverse{
 
 
 .skill{
-  background-color: #596a7b;
+  background-color: #2d4053;
+  border: 1px solid #3e5a74;
   padding: 10px;
   margin: 5px;
   width: 200px;
@@ -147,4 +147,11 @@ form{
   div.form-group{
     width: 86%;
   }
+}
+
+@media (min-width: 400px) {
+  div:hover{
+
+  }
+
 }
