@@ -69,9 +69,7 @@ class Resume extends Component {
                     <span className="p-1">{obj.skillName}</span>
                     <span className="p-1">{obj.ratingKind} Score</span>
                     <p className="rating p-1" style={ratingStyle(obj)}>{obj.rating}</p>
-                    <div className="p-1 codeBubble">
-                        <span className="fa fa-code codeLink"></span>
-                    </div>
+
                 </div>
             )
         });

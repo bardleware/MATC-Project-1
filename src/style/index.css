@@ -52,66 +52,7 @@ p{
   background-color: #b30000;
   border-radius: 50%;
 }
-.fcc{
-  color: white;
-}
-.fccLink{
-  margin: 0 auto;
-  font-size: 24pt;
-  color: #ffffff;
-}
-.fccBack{
-  background-color: #008000;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-a.eduLink:hover{
-  text-decoration: none;
-}
-.container-edu{
-  display:flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 5px;
-}
-.rating{
-  font-size: 26pt;
-}
-.p-1{
-  padding: 0;
-  margin: 0 auto;
-}
-.skillContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #2d4053;
-  border: 1px solid #3e5a74;
-  border-radius: 50%;
-  padding: 10px;
-  margin: 5px;
-  height: 200px;
-  width: 200px;
-}
 
-.sklLogo{
-  font-size: 40pt;
-}
-
-.codeBubble{
-  background-color: #f2f2f2;
-  color: #e6e6e6;
-  font-size: 16pt;
-  border-radius: 50%;
-  height: 32px;
-  width: 32px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.codeLink{
-  margin: 0 auto;
-}
 /* Boostrapr overrides*/
 nav.navbar.navbar-inverse{
   height: 50px;
@@ -181,6 +122,53 @@ nav.navbar.navbar-inverse{
 .skill li{
   list-style: none;
 }
+
+.fcc{
+  color: white;
+}
+.fccLink{
+  margin: 0 auto;
+  font-size: 24pt;
+  color: #ffffff;
+}
+.fccBack{
+  background-color: #008000;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+a.eduLink:hover{
+  text-decoration: none;
+}
+.container-edu{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.rating{
+  font-size: 26pt;
+}
+.p-1{
+  padding: 0;
+  margin: 0 auto;
+}
+.skillContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2d4053;
+  border: 1px solid #3e5a74;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 5px;
+  height: 200px;
+  width: 200px;
+}
+
+.sklLogo{
+  font-size: 40pt;
+}
+
 /* Contact form styling */
 .form{
   margin-top: 50px;
@@ -209,4 +197,19 @@ form{
 
   }
 
+}
+
+/* Project page Styles */
+
+.btn-block-container{
+  display: flex;
+
+}
+.btn-flex{
+  width: 50%;
+}
+.aboutSpace{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 10px 15px 5px 15px;
 }
