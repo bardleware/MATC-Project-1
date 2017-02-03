@@ -74,8 +74,29 @@ a.eduLink:hover{
   align-items: center;
   margin-bottom: 5px;
 }
+.rating{
+  font-size: 26pt;
+}
+.p-1{
+  padding: 0;
+  margin: 0 auto;
+}
+.skillContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2d4053;
+  border: 1px solid #3e5a74;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 5px;
+  height: 150px;
+  width: 150px;
+}
 
-
+.sklLogo{
+  font-size: 40pt;
+}
 
 /* Boostrapr overrides*/
 nav.navbar.navbar-inverse{
@@ -135,7 +156,6 @@ nav.navbar.navbar-inverse{
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-
 
 .skill{
   background-color: #2d4053;

@@ -6,18 +6,51 @@ class Resume extends Component {
     render() {
         const skills = [
             {
-                "Label": "JavaScript",
-                "value": 210
+                "styleClass": "skillContainer",
+                "key": 1,
+                "logoStyle": "sklLogo devicon-javascript-plain colored",
+                "rating": 210
             },
             {
-                "label": "HTML5",
-                "value": 184
+                "styleClass": "skillContainer",
+                "key": 2,
+                "logoStyle": "sklLogo devicon-html5-plain colored",
+                "rating": 184
+            },
+            {
+                "styleClass": "skillContainer",
+                "key": 3,
+                "logoStyle": "sklLogo devicon-css3-plain colored",
+                "rating": 86
             }
 
         ];
         /*const employment = [];
          const education =[];
          */
+        function ratingStyle(obj){
+            let val = obj.rating;
+            if (val <= 100 ){
+                return {color:'#ffc61a'};
+            }
+            else if (val <= 200 ){
+                return {color:'#00cc00'};
+            }
+            else{
+                return {color:'#1ac6ff'};
+            }
+        }
+        let sklList = skills.map(function (obj) {
+            return(
+                <div key={obj.key}className={obj.styleClass}>
+                    <div className="p-1">
+                        <span className={obj.logoStyle}></span>
+                    </div>
+                    <span className="p-1">Skill Rating</span>
+                    <p className="rating p-1" style={ratingStyle(obj)}>{obj.rating}</p>
+                </div>
+            )
+        });
         return (
             <div className="resume">
                 <div className="resumeHeader">
@@ -37,7 +70,9 @@ class Resume extends Component {
                 <div id="skills">
                     <h2>Skills</h2>
                     <hr/>
-
+                    <div className="skillList">
+                        {sklList}
+                    </div>
                 </div>
 
                 <div id="employment">
