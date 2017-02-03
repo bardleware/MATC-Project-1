@@ -21,7 +21,7 @@ p{
   display: flex;
   justify-content: flex-end;
 }
-.contactIco{
+.iconLink{
   height: 50px;
   width: 50px;
   display: inline-flex;
@@ -39,12 +39,10 @@ p{
   margin: 0 auto;
   font-size: 34pt;
 }
-
 .emailBack{
   background-color: #df691a;
   border-radius: 50%;
 }
-
 .resumeLink{
   margin: 0 auto;
   font-size: 25pt;
@@ -54,6 +52,29 @@ p{
   background-color: #b30000;
   border-radius: 50%;
 }
+.fcc{
+  color: white;
+}
+.fccLink{
+  margin: 0 auto;
+  font-size: 24pt;
+  color: #ffffff;
+}
+.fccBack{
+  background-color: #008000;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+a.eduLink:hover{
+  text-decoration: none;
+}
+.container-edu{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
 
 
 /* Boostrapr overrides*/

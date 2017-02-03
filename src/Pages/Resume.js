@@ -1,38 +1,42 @@
-/* eslint-disable */import React, { Component } from 'react';
+/* eslint-disable */
+import React, {Component} from 'react';
 import VCard from '../Components/VCard';
 
 class Resume extends Component {
     render() {
-       const skills = [
-                   {
-                       "Label": "JavaScript",
-                       "value": 210
-                   },
-                   {
-                       "label": "HTML5",
-                       "value": 184
-                   }
+        const skills = [
+            {
+                "Label": "JavaScript",
+                "value": 210
+            },
+            {
+                "label": "HTML5",
+                "value": 184
+            }
 
-       ];
+        ];
         /*const employment = [];
-        const education =[];
-        */
+         const education =[];
+         */
         return (
             <div className="resume">
-            <div className="resumeHeader">
-                <h1 id="rTitle">Devan Sisson</h1>
-                <VCard />
-            </div>
-                
+                <div className="resumeHeader">
+                    <h1 id="rTitle">Devan Sisson</h1>
+                    <VCard />
+                </div>
+
 
                 <div id="mission">
                     <h2>My Mission</h2>
                     <hr />
-                    <p>Optimistic, detail oriented, creative problem solver seeking opportunities to obtain employment that will enable him to make a difference in the lives of the people he serves, allow him to have adequately challenging employment while finishing his education and provide for his family.</p>
+                    <p>Optimistic, detail oriented, creative problem solver seeking opportunities to obtain employment
+                        that will enable him to make a difference in the lives of the people he serves, allow him to
+                        have adequately challenging employment while finishing his education and provide for his
+                        family.</p>
                 </div>
                 <div id="skills">
-                        <h2>Skills</h2>
-                        <hr/>
+                    <h2>Skills</h2>
+                    <hr/>
 
                 </div>
 
@@ -45,7 +49,17 @@ class Resume extends Component {
                     <h2>Education</h2>
                     <hr/>
                     <div>
-                        <h3>Free Code Camp</h3>
+                        <a className="eduLink" href="https://www.freecodecamp.com/" target="_blank">
+                            <div className="container-edu">
+                                <div className="fccBack iconLink">
+                                    <span className="fccLink fa fa-free-code-camp"></span>
+                                </div>
+                                <div>
+                                    <h3 className="fcc">Free Code Camp</h3>
+                                </div>
+                            </div>
+                        </a>
+
                         <p>Full Stack Web Developer</p>
                         <span><em>Finishing September 2017</em></span>
                         <div className="skillList">
@@ -66,16 +80,16 @@ class Resume extends Component {
                                 </ul>
                             </div>
                             <div className="skill">HTML5:
-                            <ul>
-                                <li>div layout</li>
-                                <li>DOM Manipulation</li>
-                            </ul>
+                                <ul>
+                                    <li>div layout</li>
+                                    <li>DOM Manipulation</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                
+
             </div>
         );
     }
@@ -84,4 +98,4 @@ class Resume extends Component {
 export default Resume;
 
 
- //<div id="projects"> </div>
+//<div id="projects"> </div>
