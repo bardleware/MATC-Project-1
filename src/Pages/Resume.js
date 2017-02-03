@@ -9,6 +9,7 @@ class Resume extends Component {
                 "styleClass": "skillContainer",
                 "key": 1,
                 "logoStyle": "sklLogo devicon-javascript-plain colored",
+                "skillName": "JavaScript",
                 "ratingKind": "Pluralsight",
                 "rating": 210
             },
@@ -16,6 +17,7 @@ class Resume extends Component {
                 "styleClass": "skillContainer",
                 "key": 2,
                 "logoStyle": "sklLogo devicon-html5-plain colored",
+                "skillName": "HTML5",
                 "ratingKind": "Pluralsight",
                 "rating": 184
             },
@@ -23,8 +25,17 @@ class Resume extends Component {
                 "styleClass": "skillContainer",
                 "key": 3,
                 "logoStyle": "sklLogo devicon-css3-plain colored",
+                "skillName": "CSS3",
                 "ratingKind": "Pluralsight",
                 "rating": 86
+            },
+            {
+                "styleClass": "skillContainer",
+                "key": 4,
+                "logoStyle": "sklLogo devicon-angularjs-plain colored",
+                "skillName": "AngularJS",
+                "ratingKind": "Pluralsight",
+                "rating": 150
             }
 
         ];
@@ -33,6 +44,12 @@ class Resume extends Component {
          */
         function ratingStyle(obj){
             let val = obj.rating;
+            let place = obj.ratingKind;
+
+            if (place !== "Pluralsight"){
+                return {color: '#ffffff'}
+            }
+
             if (val <= 100 ){
                 return {color:'#ffc61a'};
             }
@@ -49,8 +66,12 @@ class Resume extends Component {
                     <div className="p-1">
                         <span className={obj.logoStyle}></span>
                     </div>
+                    <span className="p-1">{obj.skillName}</span>
                     <span className="p-1">{obj.ratingKind} Score</span>
                     <p className="rating p-1" style={ratingStyle(obj)}>{obj.rating}</p>
+                    <div className="p-1 codeBubble">
+                        <span className="fa fa-code codeLink"></span>
+                    </div>
                 </div>
             )
         });
