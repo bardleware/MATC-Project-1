@@ -9,18 +9,21 @@ class Resume extends Component {
                 "styleClass": "skillContainer",
                 "key": 1,
                 "logoStyle": "sklLogo devicon-javascript-plain colored",
+                "ratingKind": "Pluralsight",
                 "rating": 210
             },
             {
                 "styleClass": "skillContainer",
                 "key": 2,
                 "logoStyle": "sklLogo devicon-html5-plain colored",
+                "ratingKind": "Pluralsight",
                 "rating": 184
             },
             {
                 "styleClass": "skillContainer",
                 "key": 3,
                 "logoStyle": "sklLogo devicon-css3-plain colored",
+                "ratingKind": "Pluralsight",
                 "rating": 86
             }
 
@@ -46,7 +49,7 @@ class Resume extends Component {
                     <div className="p-1">
                         <span className={obj.logoStyle}></span>
                     </div>
-                    <span className="p-1">Skill Rating</span>
+                    <span className="p-1">{obj.ratingKind} Score</span>
                     <p className="rating p-1" style={ratingStyle(obj)}>{obj.rating}</p>
                 </div>
             )
