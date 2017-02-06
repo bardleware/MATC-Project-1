@@ -12,7 +12,7 @@ class NavBar extends Component {
                 <nav className="navbar navbar-inverse">
                     <div className="navBarBox">
                         <div>
-                            <a className="navbar-brand" href="/" title="Home"><div className="d-shadow">
+                            <a href="/" title="Home"><div className="d-shadow">
                             <span className="lastinitial">S</span>
                             </div></a>
                         </div>

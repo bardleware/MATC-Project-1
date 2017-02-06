@@ -81,6 +81,9 @@ nav.navbar.navbar-inverse{
   display: flex;
   justify-content:  flex-start;
   align-items: flex-end;
+  margin: 5px 10px 5px 15px;
+  color:white;
+  font-size: 12pt;
 }
 
 .lastinitial{
