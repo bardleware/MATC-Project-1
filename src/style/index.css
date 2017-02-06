@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   padding: 0;
@@ -113,6 +115,11 @@ nav.navbar.navbar-inverse{
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+.eduSkill{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 .skill{
   background-color: #2d4053;
   border: 1px solid #3e5a74;
@@ -147,6 +154,8 @@ a.eduLink:hover{
 }
 .rating{
   font-size: 26pt;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 }
 .p-1{
   padding: 0;
@@ -232,6 +241,10 @@ form{
   }
   .navBarBox{
     justify-content: space-between;
+  }
+  .navIcon{
+    margin:0 auto;
+    padding: 0px 5px 0px 5px;
   }
 }
 

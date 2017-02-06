@@ -119,7 +119,7 @@ class Resume extends Component {
 
                         <p>Full Stack Web Developer</p>
                         <span><em>Finishing September 2017</em></span>
-                        <div className="skillList">
+                        <div className="eduSkill">
                             <div className="skill">JavaScript:
                                 <ul>
                                     <li>nodeJS</li>
