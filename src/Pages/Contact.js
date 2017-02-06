@@ -7,37 +7,37 @@ class Contact extends Component {
         super();
         this.state = { value: "Send me feedback, jokes, etc. (this is not a working form. It is still under construction.)" }
     }
+
+
     render() {
         return (
             <div className="form">
                 <form className="form-horizontal">
                     <fieldset>
                         <legend>Contact Me</legend>
-                        <div className="form-group">
-                            <label className="col-lg-2 control-label">Name</label>
-                            <div className="col-lg-10">
-                                <input type="text" className="form-control" id="inputEmail" placeholder="Name"></input>
+                            <div>
+                                <label className="control-label" htmlFor="">Name</label>
                             </div>
-                        </div>
-                        <div className="form-group">
-                            <label className="col-lg-2 control-label">Email</label>
-                            <div className="col-lg-10">
-                                <input type="text" className="form-control" id="inputEmail" placeholder="Email"></input>
+                            <div>
+                                <input type="text" className="form-control" id="inputName" placeholder="Name"></input>
                             </div>
-                        </div>
 
-                        <div className="form-group">
-                            <label className="col-lg-2 control-label">Message</label>
-                            <div className="col-lg-10">
+                            <div>
+                                <label className="control-label" htmlFor="">Email</label>
+                            </div>
+                            <div>
+                                <input type="email" className="form-control" id="inputEmail" placeholder="Email"></input>
+                            </div>
+
+                            <div>
+                                <label className="control-label" htmlFor="">Message</label>
+                            </div>
+                            <div>
                                 <textarea className="form-control" rows="3" id="textArea" placeholder={this.state.value} />
                             </div>
-                        </div>
-
-                        <div className="form-group">
-                            <div className="col-lg-10 col-lg-offset-2">
-                                <button type="submit" className="btn btn-success btn-block">Send</button>
+                            <div>
+                                <button type="submit" className="btn btn-success btn-block button-spacing">Send</button>
                             </div>
-                        </div>
                     </fieldset>
                 </form>
             </div>
