@@ -40,8 +40,15 @@ class Resume extends Component {
 
         ];
         /*const employment = [];
-         const education =[];
-         */
+         const education =[
+             {
+                 "fcc": [ //free code camp
+
+                 ]
+             }
+        ]
+
+         ];*/
         function ratingStyle(obj){
             let val = obj.rating;
             let place = obj.ratingKind;
@@ -73,6 +80,8 @@ class Resume extends Component {
                 </div>
             )
         });
+
+
         return (
             <div className="resume">
                 <div className="resumeHeader">
