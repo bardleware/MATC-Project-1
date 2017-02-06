@@ -108,13 +108,11 @@ nav.navbar.navbar-inverse{
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .skillList{
   display:flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-
 .skill{
   background-color: #2d4053;
   border: 1px solid #3e5a74;
@@ -125,7 +123,6 @@ nav.navbar.navbar-inverse{
 .skill li{
   list-style: none;
 }
-
 .fcc{
   color: white;
 }
@@ -167,11 +164,21 @@ a.eduLink:hover{
   height: 200px;
   width: 200px;
 }
-
 .sklLogo{
   font-size: 40pt;
 }
 
+@media (max-width: 715px){
+  .skillList{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px){
+  .skill{
+    width: 100%;
+  }
+}
 /* Contact form styling */
 .form{
   margin-top: 50px;
@@ -213,8 +220,6 @@ form{
   justify-content: flex-start;
   flex-wrap: nowrap;
 }
-
-
 
 .navIcon{
   font-size: 16pt;
