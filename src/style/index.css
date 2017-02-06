@@ -199,6 +199,16 @@ form{
 
 }
 
+/* navbar Styles */
+
+.navIcon{
+  font-size: 16pt;
+  margin-right: 15px;
+}
+
+
+/* navLabel style goes here*/
+
 /* Project page Styles */
 
 .btn-block-container{

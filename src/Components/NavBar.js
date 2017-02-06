@@ -38,10 +38,24 @@ class NavBar extends Component {
                         </div>
                         <div className={"navbar-collapse " + navClass} id="myNavbar">
                             <ul className="nav navbar-nav">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/projects">Projects</a></li>
-                                <li><a href="/resume">Resume</a></li>
-                                <li><a href="/contact">Contact Me</a></li>
+                                <li>
+                                    <a href="/projects">
+                                        <span className="fa fa-code navIcon"></span>
+                                        <span>Projects</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/resume">
+                                        <span className="fa fa-id-card-o navIcon"></span>
+                                        <span>Resume</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/contact">
+                                        <span className="fa fa-envelope-o navIcon"></span>
+                                        <span>Contact Me</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
