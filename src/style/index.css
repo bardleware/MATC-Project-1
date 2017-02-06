@@ -200,12 +200,28 @@ form{
 }
 
 /* navbar Styles */
+.navBarBox{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+
 
 .navIcon{
   font-size: 16pt;
   margin-right: 15px;
 }
 
+@media (max-width: 600px){
+  .navLabel{
+    display: none;
+  }
+  .navBarBox{
+    justify-content: space-between;
+  }
+}
 
 /* navLabel style goes here*/
 
