@@ -40,7 +40,7 @@ class Resume extends Component {
 
         ];
         /*const employment = [];*/
-         const fcc = [ //free code camp
+        const fcc = [ //free code camp
                      "JavaScript",
                      "HTML5",
                      "CSS3",
@@ -48,10 +48,6 @@ class Resume extends Component {
                      "JQuery"
 
          ];
-
-
-
-        console.log(fcc);
 
         let fccsklList = fcc.map(function (arr, i) {
 
@@ -92,7 +88,6 @@ class Resume extends Component {
             )
         });
 
-
         return (
             <div className="resume">
                 <div className="resumeHeader">
@@ -125,48 +120,60 @@ class Resume extends Component {
 
                     <h2>Education</h2>
                     <hr/>
-                    <div className="schoolBox">
-                        <a className="eduLink" href="https://www.freecodecamp.com/" target="_blank">
-                            <div className="container-edu">
-                                <div className="fccBack iconLink">
-                                    <span className="fccLink fa fa-free-code-camp"></span>
-                                </div>
-                                <div>
-                                    <h3 className="fcc">Free Code Camp</h3>
-                                </div>
-                            </div>
-                        </a>
+                    <div id="schoolBoxes">
 
-                        <p>Full Stack Web Developer</p>
-                        <span><em></em></span>
-                        <div className="eduSkill">
-                            <div className="skill">Skills:
-                                <ul>
-                                    {fccsklList}
-                                </ul>
+                        <div className="schoolBox">
+                            <div className="linkBox">
+                                <a className="eduLink" href="https://mlatc.edu/programs/web-programming-development/" target="_blank">
+                                    <div className="container-edu">
+                                        <img src="https://mlatc.edu/wp-content/uploads/MATC-Logo-Header.png" className="img-responsive" id="matcpic" alt="MATC logo"></img>
+                                    </div>
+                                </a>
                             </div>
+                            <div className="degBox">
+                                <p>Web Programming and Development</p>
+                            </div>
+                            <div className="timeBox">
+                                <span><em>Finishing January 2018</em></span>
+                            </div>
+                            <div className="eduSkill">
+                                <div className="skill">Skills:
+                                    <ul>
+                                        {fccsklList}
+                                    </ul>
+                                </div>
 
+                            </div>
                         </div>
+
+                        <div className="schoolBox">
+                            <div className="linkBox">
+                                <a className="eduLink" href="https://www.freecodecamp.com/" target="_blank">
+                                    <div className="container-edu">
+                                        <img src="https://softwareengineeringdaily.com/wp-content/uploads/2017/01/freecodecamp.jpeg" className="img-responsive" id="fcc" alt="MATC logo"></img>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div className="degBox">
+                                <p>Full Stack Web Developer</p>
+                            </div>
+                            <div className="timeBox">
+                                <span><em></em></span>
+                            </div>
+                            <div className="eduSkill">
+                                <div className="skill">Skills:
+                                    <ul>
+                                        {fccsklList}
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div className="schoolBox">
-                        <a className="eduLink" href="https://mlatc.edu/programs/web-programming-development/" target="_blank">
-                            <div className="container-edu">
-                                <img src="https://mlatc.edu/wp-content/uploads/MATC-Logo-Header.png" className="img-responsive" id="matcpic" alt="MATC logo"></img>
-                            </div>
-                        </a>
 
-                        <p>Full Stack Web Developer</p>
-                        <span><em>Finishing September 2017</em></span>
-                        <div className="eduSkill">
-                            <div className="skill">Skills:
-                                <ul>
-                                    {fccsklList}
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
 
                 </div>
 
