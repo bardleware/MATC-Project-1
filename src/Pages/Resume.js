@@ -48,7 +48,36 @@ class Resume extends Component {
                      "JQuery"
 
          ];
+        const matc = [
+            {
+                skill: "Git",
+                status: true
+            },
+            {
+                skill: "AngularJS",
+                status: true
+            },
+            {
+                skill: "Comming Soon: FireBase",
+                status: false
+            },
 
+        ]
+
+        function matcStyle(status){
+            let finish = status;
+            if (!finish){
+                return {"font-style" : "italic"};
+            }
+            else{
+                return {"font-style" : "normal"};
+            }
+        }
+        let matcsklList = matc.map(function (obj, i){
+            return(
+                <li key={i} style={matcStyle(obj.status)}>{obj.skill}</li>
+            )
+        })
         let fccsklList = fcc.map(function (arr, i) {
 
             return(
@@ -139,7 +168,7 @@ class Resume extends Component {
                             <div className="eduSkill">
                                 <div className="skill">Skills:
                                     <ul>
-                                        {fccsklList}
+                                        {matcsklList}
                                     </ul>
                                 </div>
 
@@ -159,7 +188,7 @@ class Resume extends Component {
                                 <p>Full Stack Web Developer</p>
                             </div>
                             <div className="timeBox">
-                                <span><em></em></span>
+                                <span><em>In Progress</em></span>
                             </div>
                             <div className="eduSkill">
                                 <div className="skill">Skills:

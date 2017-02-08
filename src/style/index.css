@@ -120,7 +120,7 @@ nav.navbar.navbar-inverse{
 .skill{
   padding: 10px;
   margin: 5px;
-  width: 200px;
+  width: 2500px;
 }
 .skill li{
   list-style: none;
@@ -166,10 +166,14 @@ a.eduLink:hover{
   -webkit-align-items: center;
 }
 .degBox{
-  height: 53px;
   display: flex;
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
+}
+.degBox > p{
+  margin-bottom: 10px;
+  align-self: flex-end;
+  -webkit-align-self: flex-end;
 }
 .timeBox{
   height: 18px;
