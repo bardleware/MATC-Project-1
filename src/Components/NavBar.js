@@ -12,8 +12,8 @@ class NavBar extends Component {
                 <nav className="navbar navbar-inverse">
                     <div className="navBarBox">
                         <div>
-                            <a href="/" title="Home"><div className="d-shadow">
-                            <span className="lastinitial">S</span>
+                            <a href="/" title="Home">
+                                <div className="d-shadow">
                             </div></a>
                         </div>
                         <div id="myNavbar">

@@ -39,16 +39,27 @@ class Resume extends Component {
             }
 
         ];
-        /*const employment = [];
-         const education =[
-             {
-                 "fcc": [ //free code camp
+        /*const employment = [];*/
+         const fcc = [ //free code camp
+                     "JavaScript",
+                     "HTML5",
+                     "CSS3",
+                     "Bootstrap",
+                     "JQuery"
 
-                 ]
-             }
-        ]
+         ];
 
-         ];*/
+
+
+        console.log(fcc);
+
+        let fccsklList = fcc.map(function (arr, i) {
+
+            return(
+                <li key={i}>{arr}</li>
+            )
+        });
+
         function ratingStyle(obj){
             let val = obj.rating;
             let place = obj.ratingKind;
@@ -114,7 +125,7 @@ class Resume extends Component {
 
                     <h2>Education</h2>
                     <hr/>
-                    <div>
+                    <div className="schoolBox">
                         <a className="eduLink" href="https://www.freecodecamp.com/" target="_blank">
                             <div className="container-edu">
                                 <div className="fccBack iconLink">
@@ -127,30 +138,33 @@ class Resume extends Component {
                         </a>
 
                         <p>Full Stack Web Developer</p>
+                        <span><em></em></span>
+                        <div className="eduSkill">
+                            <div className="skill">Skills:
+                                <ul>
+                                    {fccsklList}
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className="schoolBox">
+                        <a className="eduLink" href="https://mlatc.edu/programs/web-programming-development/" target="_blank">
+                            <div className="container-edu">
+                                <img src="https://mlatc.edu/wp-content/uploads/MATC-Logo-Header.png" className="img-responsive" id="matcpic" alt="MATC logo"></img>
+                            </div>
+                        </a>
+
+                        <p>Full Stack Web Developer</p>
                         <span><em>Finishing September 2017</em></span>
                         <div className="eduSkill">
-                            <div className="skill">JavaScript:
+                            <div className="skill">Skills:
                                 <ul>
-                                    <li>nodeJS</li>
-                                    <li>ReactJS</li>
-                                    <li>JQuery</li>
-                                    <li>Basic JavaScript</li>
+                                    {fccsklList}
                                 </ul>
                             </div>
-                            <div className="skill">CSS:
-                                <ul>
-                                    <li>Selectors</li>
-                                    <li>Theming</li>
-                                    <li>Bootstrap</li>
-                                    <li>Basic Media Queries</li>
-                                </ul>
-                            </div>
-                            <div className="skill">HTML5:
-                                <ul>
-                                    <li>div layout</li>
-                                    <li>DOM Manipulation</li>
-                                </ul>
-                            </div>
+
                         </div>
                     </div>
 

@@ -85,12 +85,6 @@ nav.navbar.navbar-inverse{
   font-size: 12pt;
 }
 
-.lastinitial{
-  font-weight: 500;
-  font-size: 105%;
-  padding-left: 2px;
-  text-decoration: none;
-}
 
 /* Resume Styling */
 .resume {
@@ -101,7 +95,9 @@ nav.navbar.navbar-inverse{
   margin-bottom: 20px;
   width: 400px;
 }
-
+#matcpic{
+  width: 250px;
+}
 .resumeHeader{
   display: flex;
   align-items: flex-end;
@@ -152,6 +148,10 @@ a.eduLink:hover{
   -webkit-align-items: center;
   margin-bottom: 5px;
 }
+.schoolBox{
+  margin: 25px 5px 10px 5px;
+}
+
 .rating{
   font-size: 26pt;
   font-family: 'Roboto', sans-serif;
