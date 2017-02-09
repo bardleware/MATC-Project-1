@@ -41,13 +41,13 @@ class Resume extends Component {
         ];
         /*const employment = [];*/
         const fcc = [ //free code camp
-                     "JavaScript",
-                     "HTML5",
-                     "CSS3",
-                     "Bootstrap",
-                     "JQuery"
+            "JavaScript",
+            "HTML5",
+            "CSS3",
+            "Bootstrap",
+            "JQuery"
 
-         ];
+        ];
         const matc = [
             {
                 skill: "Git",
@@ -64,48 +64,50 @@ class Resume extends Component {
 
         ]
 
-        function matcStyle(status){
+        function matcStyle(status) {
             let finish = status;
-            if (!finish){
-                return {"font-style" : "italic"};
+            if (!finish) {
+                return {"font-style": "italic"};
             }
-            else{
-                return {"font-style" : "normal"};
+            else {
+                return {"font-style": "normal"};
             }
         }
-        let matcsklList = matc.map(function (obj, i){
-            return(
+
+        let matcsklList = matc.map(function (obj, i) {
+            return (
                 <li key={i} style={matcStyle(obj.status)}>{obj.skill}</li>
             )
         })
         let fccsklList = fcc.map(function (arr, i) {
 
-            return(
+            return (
                 <li key={i}>{arr}</li>
             )
         });
 
-        function ratingStyle(obj){
+        function ratingStyle(obj) {
             let val = obj.rating;
             let place = obj.ratingKind;
 
-            if (place !== "Pluralsight"){
+            if (place !== "Pluralsight") {
                 return {color: '#ffffff'}
             }
 
-            if (val <= 100 ){
-                return {color:'#ffc61a'};
+            if (val <= 100) {
+                return {color: '#ffc61a'};
             }
-            else if (val <= 200 ){
-                return {color:'#00cc00'};
+            else if (val <= 200) {
+                return {color: '#00cc00'};
             }
-            else{
-                return {color:'#1ac6ff'};
+            else {
+                return {color: '#1ac6ff'};
             }
         }
+
         let sklList = skills.map(function (obj) {
-            return(
-                <div key={obj.key}className={obj.styleClass}>
+            return (
+                <div key={obj.key} className={obj.styleClass}>
                     <div className="p-1">
                         <span className={obj.logoStyle}></span>
                     </div>
@@ -146,16 +148,17 @@ class Resume extends Component {
                 </div>
 
                 <div id="education">
-
                     <h2>Education</h2>
                     <hr/>
                     <div id="schoolBoxes">
 
                         <div className="schoolBox">
                             <div className="linkBox">
-                                <a className="eduLink" href="https://mlatc.edu/programs/web-programming-development/" target="_blank">
+                                <a className="eduLink"
+                                   href="https://mlatc.edu/programs/web-programming-development/" target="_blank">
                                     <div className="container-edu">
-                                        <img src="https://mlatc.edu/wp-content/uploads/MATC-Logo-Header.png" className="img-responsive" id="matcpic" alt="MATC logo"></img>
+                                        <img src="https://mlatc.edu/wp-content/uploads/MATC-Logo-Header.png"
+                                             className="img-responsive" id="matcpic" alt="MATC logo"></img>
                                     </div>
                                 </a>
                             </div>
@@ -179,7 +182,9 @@ class Resume extends Component {
                             <div className="linkBox">
                                 <a className="eduLink" href="https://www.freecodecamp.com/" target="_blank">
                                     <div className="container-edu">
-                                        <img src="https://softwareengineeringdaily.com/wp-content/uploads/2017/01/freecodecamp.jpeg" className="img-responsive" id="fcc" alt="MATC logo"></img>
+                                        <img
+                                            src="https://softwareengineeringdaily.com/wp-content/uploads/2017/01/freecodecamp.jpeg"
+                                            className="img-responsive" id="fcc" alt="MATC logo"></img>
                                     </div>
                                 </a>
                             </div>
@@ -201,9 +206,6 @@ class Resume extends Component {
                         </div>
 
                     </div>
-
-
-
                 </div>
 
             </div>
