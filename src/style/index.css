@@ -1,309 +1,386 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.columnFlexObj {
+    display: flex;
+    flex-direction: column;
+}
+.centerFlexObj {
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
 }
 
+.centerFlexObj > h3{
+    margin-bottom: 20px;
+}
+
+
 .App {
-  text-align: center;
-  height: 120%;
+    text-align: center;
+    height: 120%;
 }
-p{
-  font-size: 14pt;
+
+p {
+    font-size: 14pt;
 }
+
 .thumb {
-  width:100%;
+    width: 100%;
 }
 
 /* VCard styles*/
-.links{
-  display: flex;
-  justify-content: flex-end;
-}
-.iconLink{
-  height: 50px;
-  width: 50px;
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 5px;
-  color: #2b3e50;
+.links {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.githubBack{
-  background-color: white;;
-  border-radius: 50%;
+.iconLink {
+    height: 50px;
+    width: 50px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5px;
+    color: #2b3e50;
 }
+
+.githubBack {
+    background-color: white;;
+    border-radius: 50%;
+}
+
 .contactlink {
-  margin: 0 auto;
-  font-size: 34pt;
+    margin: 0 auto;
+    font-size: 34pt;
 }
-.emailBack{
-  background-color: #df691a;
-  border-radius: 50%;
+
+.emailBack {
+    background-color: #df691a;
+    border-radius: 50%;
 }
-.resumeLink{
-  margin: 0 auto;
-  font-size: 25pt;
-  color: white;
+
+.resumeLink {
+    margin: 0 auto;
+    font-size: 25pt;
+    color: white;
 }
-.resumeBack{
-  background-color: #b30000;
-  border-radius: 50%;
+
+.resumeBack {
+    background-color: #b30000;
+    border-radius: 50%;
 }
 
 /* Boostrapr overrides*/
-nav.navbar.navbar-inverse{
-  height: 50px;
-  z-index: 5;
+nav.navbar.navbar-inverse {
+    height: 50px;
+    z-index: 5;
 }
 
-.navbar-toggle{
-  margin-top: 6px;
+.navbar-toggle {
+    margin-top: 6px;
 }
 
 .navbar-nav {
-  margin-top: 6px;
+    margin-top: 6px;
 }
+
 #myNavbar {
-  background-color: #df691a;
+    background-color: #df691a;
 }
 
 /* end Bootstrap overrides*/
 
-.d-shadow{
-  width: 30px;
-  height: 30px;
-  background-color: #2b3e50;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  display: flex;
-  justify-content:  flex-start;
-  align-items: flex-end;
-  margin: 5px 10px 5px 15px;
-  color:white;
-  font-size: 12pt;
+.d-shadow {
+    width: 30px;
+    height: 30px;
+    background-color: #2b3e50;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 5px 10px 5px 15px;
+    color: white;
+    font-size: 12pt;
 }
-
 
 /* Resume Styling */
 .resume {
-  margin: 5%;
+    margin: 5%;
 }
-
-#rTitle{
-  margin-bottom: 20px;
-  width: 400px;
-}
-#matcpic{
-  width: 275px;
-}
-#fcc{
-  width: 275px;
-}
-.resumeHeader{
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.skillList{
-  display:flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-.eduSkill{
-  display:flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-.skill{
-  padding: 10px;
-  margin: 5px;
-  width: 2500px;
-}
-.skill li{
-  list-style: none;
-}
-.fcc{
-  color: white;
-}
-.fccLink{
-  margin: 0 auto;
-  font-size: 24pt;
-  color: #ffffff;
-}
-.fccBack{
-  background-color: #008000;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-a.eduLink:hover{
-  text-decoration: none;
-}
-.container-edu{
-  display:flex;
-  justify-content: flex-start;
-  align-items: center;
-  -webkit-justify-content: flex-start;
-  -webkit-align-items: center;
-  margin-bottom: 5px;
-}
-.schoolBox{
-  width: 350px;
-  margin: 5px;
-  background-color: #2d4053;
-  border: 10px solid #3e5a74;
-  padding: 10px;
-}
-
-.linkBox{
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-  align-items: center;
-  -webkit-align-items: center;
-}
-.degBox{
-  display: flex;
-  justify-content: flex-start;
-  -webkit-justify-content: flex-start;
-}
-.degBox > p{
-  margin-bottom: 10px;
-  align-self: flex-end;
-  -webkit-align-self: flex-end;
-}
-.timeBox{
-  height: 18px;
-  display: flex;
-  justify-content: flex-start;
-  -webkit-justify-content: flex-start;
-  align-items: flex-end;
-  -webkit-align-items: flex-end;
+@media (min-width: 1000px){
+    .resume{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 
-#schoolBoxes{
-  display: flex;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-.rating{
-  font-size: 26pt;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-}
-.p-1{
-  padding: 0;
-  margin: 0 auto;
-}
-.skillContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  -webkit-flex-direction: column;
-  -webkit-justify-content: center;
-  background-color: #2d4053;
-  border: 1px solid #3e5a74;
-  border-radius: 50%;
-  padding: 10px;
-  margin: 5px;
-  height: 200px;
-  width: 200px;
-}
-.sklLogo{
-  font-size: 40pt;
+#rTitle {
+    margin-bottom: 20px;
+    width: 400px;
 }
 
-@media (max-width: 715px){
-  .skillList{
+.companyName{
+    margin-left: 10px;
+}
+.companyIcon{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.initial{
+    margin: 0 auto;
+    font-weight: 600;
+}
+.companyHeader{
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    font-size: 20pt;
+}
+
+
+#matcpic {
+    width: 275px;
+}
+
+#fcc {
+    width: 275px;
+}
+
+.resumeHeader {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skillList {
+    display: flex;
     justify-content: center;
     -webkit-justify-content: center;
-  }
+    -webkit-flex-wrap: wrap;
+    xf flex-wrap: wrap;
 }
 
-@media (max-width: 480px){
-  .skill{
-    width: 100%;
-  }
+.eduSkill {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
+
+.skill {
+    padding: 10px;
+    margin: 5px;
+    width: 2500px;
+}
+
+.skill li {
+    list-style: none;
+}
+
+.fcc {
+    color: white;
+}
+
+.fccLink {
+    margin: 0 auto;
+    font-size: 24pt;
+    color: #ffffff;
+}
+
+.fccBack {
+    background-color: #008000;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+a.eduLink:hover {
+    text-decoration: none;
+}
+
+.container-edu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    -webkit-justify-content: flex-start;
+    -webkit-align-items: center;
+    margin-bottom: 5px;
+}
+
+.schoolBox {
+    width: 350px;
+    margin: 5px;
+    background-color: #2d4053;
+    border: 10px solid #3e5a74;
+    padding: 10px;
+}
+
+.linkBox {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.degBox {
+    display: flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+}
+
+.degBox > p {
+    margin-bottom: 10px;
+    align-self: flex-end;
+    -webkit-align-self: flex-end;
+}
+
+.timeBox {
+    height: 18px;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+}
+
+#schoolBoxes {
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rating {
+    font-size: 26pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.p-1 {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.skillContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    background-color: #2d4053;
+    border: 1px solid #3e5a74;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+    height: 200px;
+    width: 200px;
+}
+
+.sklLogo {
+    font-size: 40pt;
+}
+
+@media (max-width: 715px) {
+    .skillList {
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill {
+        width: 100%;
+    }
+}
+
 /* Contact form styling */
-.form{
-  margin-top: 50px;
-}
-form{
-  margin: 0 auto;
-  width: 400px;
-  border: 2px solid #4e5d6c;
-  padding: 10px;
+.form {
+    margin-top: 50px;
 }
 
-.button-spacing{
-  margin-top: 20px;
+form {
+    margin: 0 auto;
+    width: 400px;
+    border: 2px solid #4e5d6c;
+    padding: 10px;
 }
 
-@media (max-width:400px){
-  form{
-    width: 95%;
-    border: none;
-    margin: 0;
-    padding-left: 5%;
-  }
-  div.form-group{
-    width: 86%;
-  }
+.button-spacing {
+    margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+    form {
+        width: 95%;
+        border: none;
+        margin: 0;
+        padding-left: 5%;
+    }
+
+    div.form-group {
+        width: 86%;
+    }
 }
 
 @media (min-width: 400px) {
-  div:hover{
+    div:hover {
 
-  }
+    }
 
 }
 
 /* navbar Styles */
-.navBarBox{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  -webkit-align-items: center;
-  -webkit-justify-content: space-between;
-  -webkit-flex-wrap: nowrap;
+.navBarBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
+    -webkit-flex-wrap: nowrap;
 }
 
-.navIcon{
-  font-size: 16pt;
-  margin-right: 15px;
+.navIcon {
+    font-size: 16pt;
+    margin-right: 15px;
 }
 
-@media (max-width: 600px){
-  .navLabel{
-    display: none;
-  }
+@media (max-width: 600px) {
+    .navLabel {
+        display: none;
+    }
 
-  .navIcon{
-    margin:0 auto;
-    padding: 0px 5px 0px 5px;
-  }
+    .navIcon {
+        margin: 0 auto;
+        padding: 0px 5px 0px 5px;
+    }
 }
 
 /* navLabel style goes here*/
 
 /* Project page Styles */
 
-.btn-block-container{
-  display: flex;
+.btn-block-container {
+    display: flex;
 
 }
-.btn-flex{
-  width: 50%;
+
+.btn-flex {
+    width: 50%;
 }
-.aboutSpace{
-  margin-top: 5px;
-  margin-bottom: 20px;
-  padding: 10px 15px 5px 15px;
+
+.aboutSpace {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px 15px 5px 15px;
 }

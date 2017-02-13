@@ -39,7 +39,58 @@ class Resume extends Component {
             }
 
         ];
-        /*const employment = [];*/
+        const employment = [
+            {
+                Initial: "VS",
+                iconStyles:{
+                    bgColor: "orange",
+                    color: "white"
+                },
+                Company: "Vivint Solar",
+                Title: "PV Designer",
+                Time: "4 Months",
+                Dates: "November 2016 - Present",
+                Duties: [
+                    "Designed Photo-Voltaic systems for residential up to 100% power offset",
+                    "Created and developed workflow used in training new hires"
+                ]
+            },
+            {
+                Initial: "8",
+                iconStyles:{
+                    bgColor: "blue",
+                    color: "white"
+                },
+                Company: "1-800-Contacts",
+                Title: "Inbound Customer Service Agent",
+                Time: "7 Months",
+                Dates: "April 2016 - November 2016",
+                Duties: [
+                    "Built an basic email generator that improved the efficiency of sending customer requested emails",
+                    "Passionately addressed each customer, owning the experience and catering a truly singular customer service experience",
+                    "Averaged 75% of Quality Standards, meeting or exceeding expectations",
+                    "Cultivated and enriched customer relationships, owning the relationship between 1-800-Contacts and the customer"
+                ]
+            },
+            {
+                Initial: "BB",
+                iconStyles:{
+                    bgColor: "blue",
+                    color: "Yellow"
+                },
+                Company: "Best Buy",
+                Title: "Computer Solution Expert",
+                Time: "6 Months",
+                Dates: "October 2015 - February 2016",
+                Duties: [
+                    "Built an basic email generator that improved the efficiency of sending customer requested emails",
+                    "Passionately addressed each customer, owning the experience and catering a truly singular customer service experience"
+                ]
+            }
+        ];
+
+
+
         const fcc = [ //free code camp
             "JavaScript",
             "HTML5",
@@ -54,8 +105,8 @@ class Resume extends Component {
                 status: true
             },
             {
-                skill: "AngularJS",
-                status: true
+                skill: "AngularJS In Progress",
+                status: false
             },
             {
                 skill: "Comming Soon: FireBase",
@@ -63,6 +114,50 @@ class Resume extends Component {
             },
 
         ]
+
+
+        function dutyList(arr) {
+
+            let duties = arr.map(function (str, i) {
+                return(
+                    <li key={i}>{str}</li>
+                );
+            });
+
+            return duties;
+        }
+        function iconStyler(arr) {
+            return({
+                backgroundColor : arr.bgColor,
+                color : arr.color
+            })
+        }
+        let jobList = employment.map(function(obj, i){
+           return(
+               <div key={i}>
+                   <div className="companyHeader">
+                       <div style={iconStyler(obj.iconStyles)} className="companyIcon">
+
+                               <span className="initial">{obj.Initial}</span>
+
+                       </div>
+                       <div className="companyName">{obj.Company}</div>
+                   </div>
+                   <div>
+                       <div>{obj.Title}</div>
+                   </div>
+                   <div>
+                       <div>{obj.Time}</div>
+                       <div>{obj.Dates}</div>
+                   </div>
+                   <div>
+                       <ul>
+                           {dutyList(obj.Duties)}
+                       </ul>
+                   </div>
+               </div>
+           )
+        });
 
         function matcStyle(status) {
             let finish = status;
@@ -135,16 +230,13 @@ class Resume extends Component {
                         have adequately challenging employment while finishing his education and provide for his
                         family.</p>
                 </div>
-                <div id="skills">
-                    <h2>Skills</h2>
-                    <hr/>
-                    <div className="skillList">
-                        {sklList}
-                    </div>
-                </div>
 
                 <div id="employment">
-
+                    <h2>Employment</h2>
+                    <hr/>
+                    <div className="jobList">
+                        {jobList}
+                    </div>
                 </div>
 
                 <div id="education">
@@ -207,6 +299,20 @@ class Resume extends Component {
 
                     </div>
                 </div>
+
+                <div id="skills">
+                    <h2>Skills</h2>
+                    <hr/>
+                    <div className="columnFlexObj">
+                        <div className="centerFlexObj">
+                            <h3>Programming & Development</h3>
+                        </div>
+                        <div className="skillList">
+                            {sklList}
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
         );
