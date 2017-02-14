@@ -135,9 +135,33 @@ nav.navbar.navbar-inverse {
     -webkit-align-items: center;
 }
 
-.initial{
-    margin: 0 auto;
-    font-weight: 600;
+.jobList{
+    display: flex;
+    flex-direction: column;
+}
+
+.jobBox{
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    border-bottom: 2px solid #3e5a74;
+    border-left: 5px solid #3e5a74;
+
+}
+
+.infoBox{
+    height: 60px;
+    margin-left: 50px;
+    padding-left: 10px;
+}
+.time{
+    height: 30px;
+}
+.timeThere{
+    width: 100px;
+}
+.datesWorked{
+    width: 250px;
 }
 .companyHeader{
     display: flex;
@@ -146,6 +170,15 @@ nav.navbar.navbar-inverse {
     font-size: 20pt;
 }
 
+.companyInfo{
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.jobDuties{
+    margin-left: 10%;
+    width: 90%;
+}
 
 #matcpic {
     width: 275px;
@@ -167,7 +200,7 @@ nav.navbar.navbar-inverse {
     justify-content: center;
     -webkit-justify-content: center;
     -webkit-flex-wrap: wrap;
-    xf flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .eduSkill {

@@ -41,10 +41,9 @@ class Resume extends Component {
         ];
         const employment = [
             {
-                Initial: "VS",
                 iconStyles:{
                     bgColor: "orange",
-                    color: "white"
+                    border: "white"
                 },
                 Company: "Vivint Solar",
                 Title: "PV Designer",
@@ -56,7 +55,6 @@ class Resume extends Component {
                 ]
             },
             {
-                Initial: "8",
                 iconStyles:{
                     bgColor: "blue",
                     color: "white"
@@ -73,7 +71,6 @@ class Resume extends Component {
                 ]
             },
             {
-                Initial: "BB",
                 iconStyles:{
                     bgColor: "blue",
                     color: "Yellow"
@@ -130,27 +127,28 @@ class Resume extends Component {
             return({
                 backgroundColor : arr.bgColor,
                 color : arr.color
+
             })
         }
+
+
+
         let jobList = employment.map(function(obj, i){
            return(
-               <div key={i}>
-                   <div className="companyHeader">
-                       <div style={iconStyler(obj.iconStyles)} className="companyIcon">
-
-                               <span className="initial">{obj.Initial}</span>
-
+               <div key={i} className="jobBox">
+                   <div className="companyInfo">
+                       <div className="companyHeader">
+                           <div style={iconStyler(obj.iconStyles)} className="companyIcon">
+                           </div>
+                           <div className="companyName">{obj.Company}</div>
                        </div>
-                       <div className="companyName">{obj.Company}</div>
+                       <div className="infoBox">
+                           <div className="jobTitle">{obj.Title}</div>
+                           <div className="time datesWorked">{obj.Dates}</div>
+                       </div>
                    </div>
-                   <div>
-                       <div>{obj.Title}</div>
-                   </div>
-                   <div>
-                       <div>{obj.Time}</div>
-                       <div>{obj.Dates}</div>
-                   </div>
-                   <div>
+
+                   <div className="jobDuties">
                        <ul>
                            {dutyList(obj.Duties)}
                        </ul>
