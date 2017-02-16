@@ -10,6 +10,7 @@ class Resume extends Component {
                 "key": 1,
                 "logoStyle": "sklLogo devicon-javascript-plain colored",
                 "skillName": "JavaScript",
+                "needIcon": false,
                 "ratingKind": "Pluralsight",
                 "rating": 210
             },
@@ -18,6 +19,7 @@ class Resume extends Component {
                 "key": 2,
                 "logoStyle": "sklLogo devicon-html5-plain colored",
                 "skillName": "HTML5",
+                "needIcon": false,
                 "ratingKind": "Pluralsight",
                 "rating": 184
             },
@@ -26,6 +28,7 @@ class Resume extends Component {
                 "key": 3,
                 "logoStyle": "sklLogo devicon-css3-plain colored",
                 "skillName": "CSS3",
+                "needIcon": false,
                 "ratingKind": "Pluralsight",
                 "rating": 86
             },
@@ -34,16 +37,46 @@ class Resume extends Component {
                 "key": 4,
                 "logoStyle": "sklLogo devicon-angularjs-plain colored",
                 "skillName": "AngularJS",
+                "needIcon": false,
                 "ratingKind": "Pluralsight",
                 "rating": 150
+            },
+            {
+                "styleClass": "skillContainer",
+                "key": 5,
+                "logoStyle": "sklLogo autoCAD skillFont",
+                "skillName": "Auto CAD",
+                "needIcon": true,
+                "icon": "A",
+                "ratingKind": "",
+                "rating": 50
+            },
+            {
+                "styleClass": "skillContainer",
+                "key": 6,
+                "logoStyle": "sklLogo excel skillFont",
+                "skillName": "Excel",
+                "needIcon": true,
+                "icon": "X",
+                "ratingKind": "",
+                "rating": "50%"
+            },
+            {
+                "styleClass": "skillContainer",
+                "key": 7,
+                "logoStyle": "sklLogo tenKey skillFont",
+                "skillName": "10 Key",
+                "needIcon": true,
+                "icon": "10",
+                "ratingKind": "",
+                "rating": "75%"
             }
 
         ];
         const employment = [
             {
                 iconStyles:{
-                    bgColor: "orange",
-                    border: "white"
+                    bgColor: "#ff8000"
                 },
                 Company: "Vivint Solar",
                 Title: "PV Designer",
@@ -56,8 +89,7 @@ class Resume extends Component {
             },
             {
                 iconStyles:{
-                    bgColor: "blue",
-                    color: "white"
+                    bgColor: "#1a1aff"
                 },
                 Company: "1-800-Contacts",
                 Title: "Inbound Customer Service Agent",
@@ -72,16 +104,17 @@ class Resume extends Component {
             },
             {
                 iconStyles:{
-                    bgColor: "blue",
-                    color: "Yellow"
+                    bgColor: "#000099"
                 },
                 Company: "Best Buy",
                 Title: "Computer Solution Expert",
                 Time: "6 Months",
                 Dates: "October 2015 - February 2016",
                 Duties: [
-                    "Built an basic email generator that improved the efficiency of sending customer requested emails",
-                    "Passionately addressed each customer, owning the experience and catering a truly singular customer service experience"
+                    "Assisted customers in the selection of their new computer",
+                    "Answered questions customers might have regarding computer hardware",
+                    "Assisted customers in finding the computer that best met their needs",
+                    "Overcame communication barriers to better assist customers"
                 ]
             }
         ];
@@ -123,22 +156,19 @@ class Resume extends Component {
 
             return duties;
         }
-        function iconStyler(arr) {
-            return({
-                backgroundColor : arr.bgColor,
-                color : arr.color
 
-            })
+        function setJobBorderColor(attr) {
+            return(
+                {"borderColor": attr}
+            )
         }
-
-
 
         let jobList = employment.map(function(obj, i){
            return(
-               <div key={i} className="jobBox">
+               <div key={i} className="jobBox" style={setJobBorderColor(obj.iconStyles.bgColor)}>
                    <div className="companyInfo">
                        <div className="companyHeader">
-                           <div style={iconStyler(obj.iconStyles)} className="companyIcon">
+                           <div className="companyIcon">
                            </div>
                            <div className="companyName">{obj.Company}</div>
                        </div>
@@ -160,10 +190,10 @@ class Resume extends Component {
         function matcStyle(status) {
             let finish = status;
             if (!finish) {
-                return {"font-style": "italic"};
+                return {"fontStyle": "italic"};
             }
             else {
-                return {"font-style": "normal"};
+                return {"fontStyle": "normal"};
             }
         }
 
@@ -198,11 +228,17 @@ class Resume extends Component {
             }
         }
 
+        function textOrIcon(obj) {
+            if (obj.needIcon){
+                return obj.icon;
+            }
+            return;
+        }
         let sklList = skills.map(function (obj) {
             return (
                 <div key={obj.key} className={obj.styleClass}>
                     <div className="p-1">
-                        <span className={obj.logoStyle}></span>
+                        <span className={obj.logoStyle}>{textOrIcon(obj)}</span>
                     </div>
                     <span className="p-1">{obj.skillName}</span>
                     <span className="p-1">{obj.ratingKind} Score</span>
@@ -227,6 +263,19 @@ class Resume extends Component {
                         that will enable him to make a difference in the lives of the people he serves, allow him to
                         have adequately challenging employment while finishing his education and provide for his
                         family.</p>
+                </div>
+
+
+                <div id="skills">
+                    <h2>Skills</h2>
+                    <hr/>
+                    <div className="columnFlexObj">
+                        <div className="centerFlexObj">
+                        </div>
+                        <div className="skillList">
+                            {sklList}
+                        </div>
+                    </div>
                 </div>
 
                 <div id="employment">
@@ -297,21 +346,6 @@ class Resume extends Component {
 
                     </div>
                 </div>
-
-                <div id="skills">
-                    <h2>Skills</h2>
-                    <hr/>
-                    <div className="columnFlexObj">
-                        <div className="centerFlexObj">
-                            <h3>Programming & Development</h3>
-                        </div>
-                        <div className="skillList">
-                            {sklList}
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
         );
     }
