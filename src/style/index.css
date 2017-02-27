@@ -317,11 +317,9 @@ a.eduLink:hover {
 
 .skillContainer {
     display: -webkit-flex;
+    display: flex;
     -webkit-flex-direction: column;
     -webkit-justify-content: center;
-    /*
-    display: flex;
-
     flex-direction: column;
     justify-content: center;*/
     background-color: #2d4053;
