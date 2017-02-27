@@ -5,10 +5,12 @@ body {
 }
 .columnFlexObj {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
 }
 .centerFlexObj {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     -webkit-justify-content: center;
 }
@@ -34,6 +36,7 @@ p {
 /* VCard styles*/
 .links {
     display: flex;
+    display: -webkit-flex;
     justify-content: flex-end;
 }
 
@@ -131,6 +134,7 @@ nav.navbar.navbar-inverse {
     height: 50px;
     width: 50px;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
 }
@@ -165,6 +169,7 @@ nav.navbar.navbar-inverse {
 }
 .companyHeader{
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
     font-size: 20pt;
@@ -197,6 +202,7 @@ nav.navbar.navbar-inverse {
 
 .skillList {
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     -webkit-justify-content: center;
     -webkit-flex-wrap: wrap;
@@ -241,6 +247,7 @@ a.eduLink:hover {
 
 .container-edu {
     display: flex;
+    display: -webkit-flex;
     justify-content: flex-start;
     align-items: center;
     -webkit-justify-content: flex-start;
@@ -259,6 +266,7 @@ a.eduLink:hover {
 .linkBox {
     height: 100px;
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
     -webkit-justify-content: center;
     align-items: center;
@@ -267,6 +275,7 @@ a.eduLink:hover {
 
 .degBox {
     display: flex;
+    display: -webkit-flex;
     justify-content: flex-start;
     -webkit-justify-content: flex-start;
 }
@@ -280,6 +289,7 @@ a.eduLink:hover {
 .timeBox {
     height: 18px;
     display: flex;
+    display: -webkit-flex;
     justify-content: flex-start;
     -webkit-justify-content: flex-start;
     align-items: flex-end;
@@ -288,6 +298,7 @@ a.eduLink:hover {
 
 #schoolBoxes {
     display: flex;
+    display: -webkit-flex;
     -webkit-justify-content: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -306,6 +317,7 @@ a.eduLink:hover {
 
 .skillContainer {
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     justify-content: center;
     -webkit-flex-direction: column;
@@ -375,6 +387,7 @@ form {
 /* navbar Styles */
 .navBarBox {
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
