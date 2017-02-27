@@ -43,6 +43,24 @@ class Resume extends Component {
             },
             {
                 "styleClass": "skillContainer",
+                "key": 8,
+                "logoStyle": "sklLogo devicon-nodejs-plain colored",
+                "skillName": "nodeJS",
+                "needIcon": false,
+                "ratingKind": "Pluralsight",
+                "rating": 134
+            },,
+            {
+                "styleClass": "skillContainer",
+                "key": 9,
+                "logoStyle": "sklLogo devicon-java-plain colored",
+                "skillName": "Java",
+                "needIcon": false,
+                "ratingKind": "Pluralsight",
+                "rating": 98
+            },
+            {
+                "styleClass": "skillContainer",
                 "key": 5,
                 "logoStyle": "sklLogo autoCAD skillFont",
                 "skillName": "Auto CAD",
@@ -241,7 +259,7 @@ class Resume extends Component {
                         <span className={obj.logoStyle}>{textOrIcon(obj)}</span>
                     </div>
                     <span className="p-1">{obj.skillName}</span>
-                    <span className="p-1">{obj.ratingKind} Score</span>
+                    <span className="p-1">{obj.ratingKind} Rating</span>
                     <p className="rating p-1" style={ratingStyle(obj)}>{obj.rating}</p>
 
                 </div>
