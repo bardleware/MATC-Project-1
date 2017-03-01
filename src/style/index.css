@@ -259,7 +259,6 @@ a.eduLink:hover {
     list-style: none;
 }
 .skillContainer {
-    display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
     -webkit-justify-content: center;
@@ -272,6 +271,9 @@ a.eduLink:hover {
     margin: 5px;
     height: 200px;
     width: 200px;
+}
+.skillInfo{
+    text-align: center;
 }
 .skillList {
     display: flex;

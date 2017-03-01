@@ -255,13 +255,14 @@ class Resume extends Component {
         let sklList = skills.map(function (obj) {
             return (
                 <div key={obj.key} className={obj.styleClass}>
-                    <div className="p-1">
-                        <span className={obj.logoStyle}>{textOrIcon(obj)}</span>
+                    <div className="skillInfo">
+                        <div className="p-1">
+                            <span className={obj.logoStyle}>{textOrIcon(obj)}</span>
+                        </div>
+                        <span className="p-1">{obj.skillName}</span>
+                        <span className="p-1">{obj.ratingKind} Rating</span>
+                        <p className="rating p-1" style={ratingStyle(obj)}>{obj.rating}</p>
                     </div>
-                    <span className="p-1">{obj.skillName}</span>
-                    <span className="p-1">{obj.ratingKind} Rating</span>
-                    <p className="rating p-1" style={ratingStyle(obj)}>{obj.rating}</p>
-
                 </div>
             )
         });
