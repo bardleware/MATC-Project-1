@@ -5,18 +5,28 @@ class Projects extends Component {
     render() {
         const projects = [
             {
-                "id": 1,
+                "id": 1.1,
+                "name": "Brain Checklist v0.1.0",
+                "thumb": "https://placehold.it/150x80?text=IMAGE",
+                "codeLink": "#",
+                "tryMeIcon":"fa fa-code",
+                "seeCodeIcon":"fa fa-code-fork",
+                "projectLink": "http://devansprojects.net/projects/brain-checker-v1/AmenTest.html",
+                "about": "The Brain Checklist was initially created as a project in Java. Seeing the benefits of having a web based version of this checklist, I began adapting the code for use on the web. As you will soon see the css is broken and I have not made time to fix it as the question array changed and as I have learned more about JavaScript."
+            },
+            {
+                "id": 1.2,
                 "name": "Brain Checklist v0.2.1",
                 "thumb": "https://placehold.it/150x80?text=IMAGE",
                 "codeLink": "#",
                 "tryMeIcon":"fa fa-code",
                 "seeCodeIcon":"fa fa-code-fork",
-                "projectLink": "#",
-                "about": "The Brain Checklist was initially created as a project in Java. \n\nSeeing the benefits of having a web based version of this checklist, I began adapting the code for use on the web. This version does not have 100% functionality and would still require some additional JavaScript to be considered completely finished. \n\nWhile the app does have some way to go, I feel it provides a good example of my educational development in learning front end web development."
+                "projectLink": "http://devansprojects.net/projects/brain-checker-v2/brainchecker.html",
+                "about": "This Iteration of the Brain Checklist was created after I learned more about JavaScript and obtained the correct questions from the company I am working with to develop this app. The CSS has been updated and I have utilized the Bootstrap design framework to make the styling nicer to look at. This version does not have 100% functionality and would still require some additional JavaScript to be considered completely finished. While the app does have some way to go, I feel it provides a good example of my educational development in learning front end web development."
             },
             {
-                "id": 2,
-                "name": "Brain Checklist \"Under Construction\"",
+                "id": 1.3,
+                "name": "Brain Checklist v0.3.0",
                 "thumb": "https://placehold.it/150x80?text=IMAGE",
                 "codeLink": "#",
                 "tryMeIcon":"fa fa-code",
@@ -25,34 +35,54 @@ class Projects extends Component {
                 "about": "This iteration of the Brain Checklist takes all that I have learned about JavaScript to create an optimized version of what I have already created. This version will re-enforce the concepts of objects, closure scope, and mobile compatiblity as this will primarily be used on mobile devices."
             },
             {
-                "id": 3,
+                "id": 2,
                 "name": "Email Generator",
                 "thumb": "https://placehold.it/150x80?text=IMAGE",
                 "codeLink": "#",
                 "tryMeIcon":"fa fa-code",
                 "seeCodeIcon":"fa fa-code-fork",
-                "projectLink": "#",
+                "projectLink": "http://devansprojects.net/projects/email-generator/app.html",
                 "about": "I created this email generator as a simple tool to help me send emails to customers when I worked at 1800Contacts. I was not able to finish it completely, but it is an initial mock up of what I wanted to accomplish. This app re-enforced the concepts of DOM manipulation, String concatenation, and reusable code. "
             },
             {
-                "id": 4,
+                "id": 3,
                 "name": "Random Quote Generator v0.1.0",
                 "thumb": "https://placehold.it/150x80?text=IMAGE",
                 "codeLink": "#",
                 "tryMeIcon":"fa fa-code",
                 "seeCodeIcon":"fa fa-code-fork",
-                "projectLink": "#",
-                "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "projectLink": "http://devansprojects.net/projects/quoter/app.html",
+                "about": "This Quote Generator was part of the curriculum of Free Code Camp. It utilizes JQuery and accessing an api which returns a JSONP document which is then utilized to display the data. I also make use of a Twitter API to allow the user to send a quote through a page redirection. I did follow a tutorial to complete this project. However, in future updates, a CSS randomizer will be added so that when a user \"gets\" a new quote the color theme would update as well."
             },
             {
-                "id": 5,
+                "id": 4,
                 "name": "FCC - Tribute Page",
                 "thumb": "https://placehold.it/150x80?text=IMAGE",
                 "codeLink": "http://codepen.io/bardleware/pen/begyLg",
                 "tryMeIcon":"fa fa-codepen",
                 "seeCodeIcon":"fa fa-codepen",
                 "projectLink": "http://codepen.io/bardleware/pen/begyLg",
-                "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "about": "This is codepen was created as one of my first projects from Free Code Camp. The project introduced me to user stories, HTML div's and CSS styling with Bootstrap"
+            },
+            {
+                "id": 5,
+                "name": "Map Randomizer",
+                "thumb": "https://placehold.it/150x80?text=IMAGE",
+                "codeLink": "#",
+                "tryMeIcon":"fa fa-code",
+                "seeCodeIcon":"fa fa-code-fork",
+                "projectLink": "http://devansprojects.net/projects/map-randomizer/pindrop.html",
+                "about": "This project was used in my studies at MATC in preparation for a golf scorecard app we will be making as part of the curriculum. This project demonstrates the concepts of using math.random() to randomly place map pins on a map or image that is provided."
+            },
+            {
+                "id": 6,
+                "name": "Wage Calculator",
+                "thumb": "https://placehold.it/150x80?text=IMAGE",
+                "codeLink": "#",
+                "tryMeIcon":"fa fa-code",
+                "seeCodeIcon":"fa fa-code-fork",
+                "projectLink": "http://devansprojects.net/projects/wage-calculator/wageCalculator.html",
+                "about": "I created this Wage calculator as a fun little app to help me budget. This app taught me about the JavaScript number\"NaN\" and how to format money."
             }
         ]
 
