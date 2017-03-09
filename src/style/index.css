@@ -387,6 +387,34 @@ form {
 /* navLabel style goes here*/
 
 /* Project page Styles */
+.projectsContainer{
+    width: 100%;
+    margin:0 auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectBlock{
+    background-color: #243442;
+    width: 475px;
+    padding: 15px;
+    margin: 10px;
+}
+@media (max-width: 900px){
+    .projectsContainer{
+        width: 98%;
+        justify-content: center;
+    }
+}
+@media (min-width: 1221px){
+    .projectsContainer{
+        width: 90%;
+    }
+}
+
 
 .btn-block-container {
     display: flex;
@@ -402,7 +430,6 @@ form {
     margin-bottom: 20px;
     padding: 10px 15px 5px 15px;
 }
-
 
 .skillFont{
     font-weight: 900;
