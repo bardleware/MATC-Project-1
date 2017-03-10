@@ -10,12 +10,12 @@ class VCard extends Component {
             </div>
         </a>
         
-          <a href="https://github.com/bardleware">
+          <a href="https://github.com/bardleware" target="_blank">
             <div className="githubBack iconLink">
               <span className="contactlink"><i className="fa fa-github contactlink"></i></span>
             </div>
           </a>
-          <a href="#">
+          <a href="http://devansprojects.net/fileserv/resume.pdf" target="_blank">
               <div className="resumeBack iconLink">
                   <span className="resumeLink"><i className="fa fa-file-pdf-o"></i></span>
               </div>

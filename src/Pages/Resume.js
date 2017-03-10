@@ -97,9 +97,23 @@ class Resume extends Component {
                     bgColor: "#ff8000"
                 },
                 Company: "Vivint Solar",
+                Title: "Solar Triage Agent",
+                Time: "1 Month",
+                Dates: "February 2017 - Present",
+                Duties: [
+                    "Answer emails from remote office reqests with a 95% accuracy",
+                    "Review secondary PV systems to ensure 100% accuracy in design process",
+                    "Meets or exceeds productivity expectations at 105%"
+                ]
+            },
+            {
+                iconStyles:{
+                    bgColor: "#ff8000"
+                },
+                Company: "",
                 Title: "PV Designer",
                 Time: "4 Months",
-                Dates: "November 2016 - Present",
+                Dates: "November 2016 - February 2017",
                 Duties: [
                     "Designed Photo-Voltaic systems for residential up to 100% power offset",
                     "Created and developed workflow used in training new hires"
@@ -180,14 +194,20 @@ class Resume extends Component {
                 {"borderColor": attr}
             )
         }
+        function setCompanyNameStyle(str){
+            if (str){
+                return "companyHeader";
+            }
+            else{
+                return "";
+            }
+        }
 
         let jobList = employment.map(function(obj, i){
            return(
                <div key={i} className="jobBox" style={setJobBorderColor(obj.iconStyles.bgColor)}>
                    <div className="companyInfo">
-                       <div className="companyHeader">
-                           <div className="companyIcon">
-                           </div>
+                       <div className={setCompanyNameStyle(obj.Company)}>
                            <div className="companyName">{obj.Company}</div>
                        </div>
                        <div className="infoBox">
@@ -278,10 +298,12 @@ class Resume extends Component {
                 <div id="mission">
                     <h2>My Mission</h2>
                     <hr />
-                    <p>Optimistic, detail oriented, creative problem solver seeking opportunities to obtain employment
-                        that will enable him to make a difference in the lives of the people he serves, allow him to
-                        have adequately challenging employment while finishing his education and provide for his
-                        family.</p>
+                    <div className="paraContainer">
+                        <p className="paraText">Optimistic, detail oriented, creative problem solver seeking opportunities to obtain employment
+                            that will enable him to make a difference in the lives of the people he serves, allow him to
+                            have adequately challenging employment while finishing his education and provide for his
+                            family.</p>
+                    </div>
                 </div>
 
 
