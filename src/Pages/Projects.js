@@ -72,7 +72,7 @@ class Projects extends Component {
             },
             {
                 "id": 5,
-                "ready":true,
+                "ready":false,
                 "name": "Map Randomizer",
                 "thumb": "https://placehold.it/150x80?text=IMAGE",
                 "codeLink": "https://github.com/bardleware/Fundamental-Skills/tree/master/projects/Map%20Randomizer",
