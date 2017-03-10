@@ -402,6 +402,20 @@ form {
 /* navLabel style goes here*/
 
 /* Project page Styles */
+
+.projTitle{
+    width: 445px;
+    height: 79px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e5d6c;
+}
+.projName{
+    font-size: 20pt;
+}
+
 .projectsContainer{
     width: 100%;
     margin:0 auto;

@@ -6,7 +6,7 @@ class Projects extends Component {
         const projects = [
             {
                 "id": 1.1,
-                "name": "Brain Checklist v0.1.0",
+                "name": "Brain Checklist v1",
                 "thumb": "https://placehold.it/150x80?text=IMAGE",
                 "codeLink": "#",
                 "tryMeIcon":"fa fa-code",
@@ -16,7 +16,7 @@ class Projects extends Component {
             },
             {
                 "id": 1.2,
-                "name": "Brain Checklist v0.2.1",
+                "name": "Brain Checklist v2.1",
                 "thumb": "https://placehold.it/150x80?text=IMAGE",
                 "codeLink": "#",
                 "tryMeIcon":"fa fa-code",
@@ -26,13 +26,13 @@ class Projects extends Component {
             },
             {
                 "id": 1.3,
-                "name": "Brain Checklist v0.3.0",
+                "name": "Brain Checklist v3",
                 "thumb": "https://placehold.it/150x80?text=IMAGE",
                 "codeLink": "#",
                 "tryMeIcon":"fa fa-code",
                 "seeCodeIcon":"fa fa-code-fork",
                 "projectLink": "#",
-                "about": "This iteration of the Brain Checklist takes all that I have learned about JavaScript to create an optimized version of what I have already created. This version will re-enforce the concepts of objects, closure scope, and mobile compatiblity as this will primarily be used on mobile devices."
+                "about": "This iteration of the Brain Checklist takes all that I have learned about JavaScript to create an optimized version of what I have already created. This version will re-enforce the concepts of objects, closure scope, and mobile compatiblity as this will primarily be used on mobile devices. The links are currently broken as I am still updating the code"
             },
             {
                 "id": 2,
@@ -46,7 +46,7 @@ class Projects extends Component {
             },
             {
                 "id": 3,
-                "name": "Random Quote Generator v0.1.0",
+                "name": "Random Quote Generator v1",
                 "thumb": "https://placehold.it/150x80?text=IMAGE",
                 "codeLink": "#",
                 "tryMeIcon":"fa fa-code",
@@ -89,8 +89,9 @@ class Projects extends Component {
         var projList = projects.map(function (obj) {
             return(
                 <div key={obj.id} className="projectBlock">
-                <p>{obj.name}</p>
-                <img src={obj.thumb} className="img-responsive thumb" alt="placeHolder"></img>
+                    <div className="projTitle">
+                        <p className="projName">{obj.name}</p>
+                    </div>
                     <div className="btn-block-container">
                         <a className="btn btn-flex btn-success" href={obj.projectLink} target="_blank"><span className={obj.tryMeIcon}></span> Try me</a>
                         <a className="btn btn-flex btn-default" href={obj.codeLink} target="_blank"><span className={obj.seeCodeIcon}></span> See the code</a>
@@ -118,5 +119,5 @@ class Projects extends Component {
         );
     }
 }
-
+//<img src={obj.thumb} className="img-responsive thumb" alt="placeHolder"></img>
 export default Projects;
