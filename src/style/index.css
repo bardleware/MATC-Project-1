@@ -404,7 +404,7 @@ form {
 /* Project page Styles */
 
 .projTitle{
-    width: 445px;
+    width: 100%;
     height: 79px;
     margin-bottom: 10px;
     display: flex;
@@ -413,7 +413,7 @@ form {
     background-color: #4e5d6c;
 }
 .projName{
-    font-size: 20pt;
+    font-size: 18pt;
 }
 
 .projectsContainer{
@@ -428,7 +428,7 @@ form {
 
 .projectBlock{
     background-color: #243442;
-    width: 475px;
+    width: 380px;
     padding: 15px;
     margin: 10px;
 }
@@ -444,14 +444,33 @@ form {
     }
 }
 
+.button-try,
+.button-see{
+    width: 171px;
+    height: 39px;
+    color: white;
+    padding: 
+}
+
+.button-try{
+    background-color: #5cb85c;
+}
+
+.button-see{
+    background-color: #4e5d6c;
+}
 
 .btn-block-container {
     display: flex;
+    width: 342px;
 
 }
 
 .btn-flex {
     width: 50%;
+}
+.btn-comingsoon{
+    width: 100%
 }
 
 .aboutSpace {
