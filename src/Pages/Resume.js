@@ -25,6 +25,15 @@ class Resume extends Component {
             },
             {
                 "styleClass": "skillContainer",
+                "key": 42,
+                "logoStyle": "sklLogo devicon-react-original colored",
+                "skillName": "ReactJS",
+                "needIcon": false,
+                "ratingKind": "Pluralsight",
+                "rating": 181
+            },
+            {
+                "styleClass": "skillContainer",
                 "key": 3,
                 "logoStyle": "sklLogo devicon-css3-plain colored",
                 "skillName": "CSS3",
@@ -58,38 +67,7 @@ class Resume extends Component {
                 "needIcon": false,
                 "ratingKind": "Pluralsight",
                 "rating": 98
-            },
-            {
-                "styleClass": "skillContainer",
-                "key": 5,
-                "logoStyle": "sklLogo autoCAD skillFont",
-                "skillName": "Auto CAD",
-                "needIcon": true,
-                "icon": "A",
-                "ratingKind": "",
-                "rating": 50
-            },
-            {
-                "styleClass": "skillContainer",
-                "key": 6,
-                "logoStyle": "sklLogo excel skillFont",
-                "skillName": "Excel",
-                "needIcon": true,
-                "icon": "X",
-                "ratingKind": "",
-                "rating": "50%"
-            },
-            {
-                "styleClass": "skillContainer",
-                "key": 7,
-                "logoStyle": "sklLogo tenKey skillFont",
-                "skillName": "10 Key",
-                "needIcon": true,
-                "icon": "10",
-                "ratingKind": "",
-                "rating": "75%"
             }
-
         ];
         const employment = [
             {
@@ -97,9 +75,21 @@ class Resume extends Component {
                     bgColor: "#ff8000"
                 },
                 Company: "Vivint Solar",
-                Title: "Solar Triage Agent",
+                Title: "Full-Stack JavaScript Developer",
                 Time: "1 Month",
-                Dates: "February 2017 - Present",
+                Dates: "April 2017 - Present",
+                Duties: [
+                    "Worked with AngularJS (1.6.x)"
+                ]
+            },
+            {
+                iconStyles:{
+                    bgColor: "#ff8000"
+                },
+                Company: "",
+                Title: "Solar Triage Agent",
+                Time: "0 Months",
+                Dates: "February 2017 - April 2017",
                 Duties: [
                     "Answer emails from remote office reqests with a 95% accuracy",
                     "Review secondary PV systems to ensure 100% accuracy in design process",
@@ -167,7 +157,7 @@ class Resume extends Component {
                 status: true
             },
             {
-                skill: "AngularJS In Progress",
+                skill: "Angular 2 In Progress",
                 status: false
             },
             {
