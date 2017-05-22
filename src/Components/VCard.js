@@ -15,7 +15,7 @@ class VCard extends Component {
               <span className="contactlink"><i className="fa fa-github contactlink"></i></span>
             </div>
           </a>
-          <a href="http://devansprojects.net/fileserv/resume.pdf" target="_blank">
+          <a href="https://s3-us-west-2.amazonaws.com/bardleware1/DevanSisson_05_22_2017.pdf" target="_blank">
               <div className="resumeBack iconLink">
                   <span className="resumeLink"><i className="fa fa-file-pdf-o"></i></span>
               </div>
