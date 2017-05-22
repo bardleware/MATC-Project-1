@@ -79,7 +79,10 @@ class Resume extends Component {
                 Time: "1 Month",
                 Dates: "April 2017 - Present",
                 Duties: [
-                    "Worked with AngularJS (1.6.x)"
+                    "Used AngularJS v1.4.x to create an internal workflow app",
+                    "Completed 4 intermediate to advanced projects within 8 weeks",
+                    "Updated and created internal app APIs",
+                    "Used CouchDB to get and store data"
                 ]
             },
             {
