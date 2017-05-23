@@ -10,16 +10,7 @@ class Home extends Component {
     return (
       <div>
         <div className="home-header">
-          <img className="profile-pic" src="http://devansprojects.net/fileserv/profile-pic.jpg" alt="Picture of Devan"></img>
-          <h3>Hello, my name is Devan.</h3>
-        </div>
-        <div className="paraContainer">
-          <div className="paraText">
-            <p>I am a full stack web developer currently attending a Web developer course at MATC in Lehi, UT where I am fine tuning and learning more about web development.</p>
-
-            <p>I have been working on learning how to code and program in my free time with plans to return to college to earn a degree in Software Development from Western Governor's University.</p>
-          </div>
-        </div>
+          <img className="profile-pic" src="https://s3-us-west-2.amazonaws.com/bardleware1/profile-square.png" alt="Picture of Devan"></img>
         <div className="navRow">
           <Link to="/projects">
             <div className="navButton">
@@ -33,6 +24,21 @@ class Home extends Component {
               <div className="navLabel">Resume</div>
             </div>
           </Link>
+          <Link to="/contact">
+            <div className="navButton">
+              <div className="fa fa-envelope-o navIcon"></div>
+              <div className="navLabel">Contact Me</div>
+            </div>
+          </Link>
+        </div>
+          <h3>Hello, my name is Devan.</h3>
+        </div>
+        <div className="paraContainer">
+          <div className="paraText">
+            <p>I am a full stack web developer currently attending a Web developer course at MATC in Lehi, UT where I am fine tuning and learning more about web development.</p>
+
+            <p>I have been working on learning how to code and program in my free time with plans to return to college to earn a degree in Software Development from Western Governor's University.</p>
+          </div>
         </div>
 
 
