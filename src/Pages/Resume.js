@@ -39,7 +39,7 @@ class Resume extends Component {
                 "skillName": "CSS3",
                 "needIcon": false,
                 "ratingKind": "Pluralsight",
-                "rating": 86
+                "rating": 109
             },
             {
                 "styleClass": "skillContainer",
