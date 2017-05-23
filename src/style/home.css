@@ -13,3 +13,32 @@
 .home-header{
     text-align: center;
 }
+
+.navRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.navButton{
+    height: 100px;
+    width: 100px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    background-color: #df691a;
+    color: white;
+    border-radius: 50px;
+}
+.navLabel{
+    font-size: 15px;
+}
+
+a{
+    color: white;
+}
