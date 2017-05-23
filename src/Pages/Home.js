@@ -15,19 +15,19 @@ class Home extends Component {
           <Link to="/projects">
             <div className="navButton">
               <div className="fa fa-code"></div>
-              <div className="navLabel">Projects</div>
+              <div className="homeNavLabel">Projects</div>
             </div>
           </Link>
           <Link to="/resume">
             <div className="navButton">
               <div className="fa fa-id-card-o"></div>
-              <div className="navLabel">Resume</div>
+              <div className="homeNavLabel">Resume</div>
             </div>
           </Link>
           <Link to="/contact">
             <div className="navButton">
-              <div className="fa fa-envelope-o navIcon"></div>
-              <div className="navLabel">Contact Me</div>
+              <div className="fa fa-envelope-o"></div>
+              <div className="homeNavLabel">Contact Me</div>
             </div>
           </Link>
         </div>

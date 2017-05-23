@@ -1,45 +1,67 @@
 .profile-pic {
-    width: 250px;
-    padding-bottom: 10px;
-    border-radius: 50%;
+  width: 250px;
+  padding-bottom: 10px;
+  border-radius: 50%;
 }
 
- .skill-list{
-     width: 100px;
-     background-color: red;
-     margin:5px;
- }
-
-.home-header{
-    text-align: center;
+.skill-list {
+  width: 100px;
+  background-color: red;
+  margin: 5px;
 }
 
-.navRow{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 550px;
-    height: 40px;
-    margin: 0 auto;
+.home-header {
+  text-align: center;
 }
 
-.navButton{
-    height: 40px;
-    width: 160px;
-    padding: 22px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 30px;
-    background-color: #df691a;
-    color: white;
-    border-radius: 50px;
+.navRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 550px;
+  padding: 10px;
+  margin: 0 auto;
 }
-.navLabel{
+
+.navButton {
+  height: 40px;
+  width: 160px;
+  padding: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  background-color: #df691a;
+  color: white;
+  border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+  .navRow {
+    width: 300px;
+  }
+
+  .navButton {
+    margin-top: 10px;
+    width: 300px;
+    height: 20px;
+    justify-content: center;
+    font-size: 24px;
+    padding: 16px;
+  }
+
+  .homeNavLabel {
     font-size: 15px;
+    margin-left: 20px;
+  }
 }
 
-a{
-    color: white;
+.homeNavLabel {
+  font-size: 15px;
+}
+
+a {
+  color: white;
 }
