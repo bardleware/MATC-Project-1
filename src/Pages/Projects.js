@@ -71,17 +71,6 @@ class Projects extends Component {
                 "about": "This is codepen was created as one of my first projects from Free Code Camp. The project introduced me to user stories, HTML div's and CSS styling with Bootstrap"
             },
             {
-                "id": 5,
-                "ready":false,
-                "name": "Map Randomizer",
-                "thumb": "https://placehold.it/150x80?text=IMAGE",
-                "codeLink": "https://github.com/bardleware/Fundamental-Skills/tree/master/projects/Map%20Randomizer",
-                "tryMeIcon": "fa fa-code",
-                "seeCodeIcon": "fa fa-code-fork",
-                "projectLink": "http://devansprojects.net/projects/map-randomizer/pindrop.html",
-                "about": "This project was used in my studies at MATC in preparation for a golf scorecard app we will be making as part of the curriculum. This project demonstrates the concepts of using math.random() to randomly place map pins on a map or image that is provided."
-            },
-            {
                 "id": 6,
                 "ready":true,
                 "name": "Wage Calculator",
