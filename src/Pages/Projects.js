@@ -5,6 +5,17 @@ class Projects extends Component {
     render() {
         const projects = [
             {
+             "id": 7,
+                "ready":true,
+                "name": "Angular Calendar app",
+                "thumb": "https://placehold.it/150x80?text=IMAGE",
+                "codeLink": "https://github.com/bardleware/angular-calendar-tut",
+                "tryMeIcon": "fa fa-code",
+                "seeCodeIcon": "fa fa-code-fork",
+                "projectLink": "http://xcalapp.s3-website-us-west-2.amazonaws.com/",
+                "about": "This is a simple calendar app that uses a custom pipe to label the day of the week given the day of the month and given that the first day of the month begins on a Sunday."
+            },
+            {
                 "id": 1.1,
                 "ready":true,
                 "name": "Brain Checklist v1",
